@@ -1,9 +1,9 @@
-package basic.dates.simpleDateFormat;
+package basic.dates.dateFormat;
 
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
-public class Exe
+public class ClassSimpleDateFormat
 {
     public static void main(String[] args)
     {
