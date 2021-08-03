@@ -42,7 +42,10 @@ public class NumbersClassification
             {
                 negative++;
             }
+            
         }
+
+        scanner.close();
 
         System.out.println(even + " valor(es) par(es)");
         System.out.println(odd + " valor(es) impar(es)");

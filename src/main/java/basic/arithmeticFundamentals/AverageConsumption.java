@@ -25,6 +25,8 @@ public class AverageConsumption
         int travelledDistance = scanner.nextInt();
         double spentFuel = scanner.nextDouble();
 
+        scanner.close();
+
         double averageConsumption = travelledDistance / spentFuel;
 
         System.out.printf("%.3f km/l%n", averageConsumption);

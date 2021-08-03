@@ -28,6 +28,8 @@ public class Banknotes
 
         money = scanner.nextInt();
 
+        scanner.close();
+
         System.out.printf("%d\n", money);
 
         for (i = 0; i < 7; i++)
