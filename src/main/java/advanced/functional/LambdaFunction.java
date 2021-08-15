@@ -4,13 +4,13 @@ public class LambdaFunction
 {
     public static void main(String[] args)
     {
-        Function function = str -> "Mr. " + str;
+        LamFunction function = str -> "Mr. " + str;
         System.out.println(function.generate("Compress"));
     }
 }
 
 // usually in another file...
 @FunctionalInterface
-interface Function {
+interface LamFunction {
     String generate(String str);
 }
