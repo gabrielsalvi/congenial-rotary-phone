@@ -7,7 +7,7 @@ número, inclusive ele mesmo.
 
 - Saída: Exiba todos os números pares até o valor de entrada, sendo um em cada linha. */
 
-package basic.arithmeticFundamentals;
+package assignments.arithmeticFundamentals;
 
 import java.io.BufferedReader;
 import java.io.IOException;

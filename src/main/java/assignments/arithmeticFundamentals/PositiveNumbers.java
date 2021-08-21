@@ -10,7 +10,7 @@ seguida, apresente a quantidade de valores positivos digitados.
 exibido abaixo no exemplo de saída. Não esqueça da mensagem "valores positivos"
 ao final. */
 
-package basic.arithmeticFundamentals;
+package assignments.arithmeticFundamentals;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -9,7 +9,7 @@ valores informados são positivos e quantos valores informados são negativos.
 - Saída: Exiba a mensagem conforme o exemplo de saída abaixo, sendo uma mensagem por
 linha e não esquecendo o final de linha após cada uma. */
 
-package basic.arithmeticFundamentals;
+package assignments.arithmeticFundamentals;
 
 import java.io.IOException;
 import java.util.Scanner;

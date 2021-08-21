@@ -11,7 +11,7 @@ um dígito após o ponto decimal.
 - Saída: Exiba o valor que representa o consumo médio do automóvel (3 casas após a
 vírgula), incluindo no final a mensagem "km/l". */
 
-package basic.arithmeticFundamentals;
+package assignments.arithmeticFundamentals;
 
 import java.io.IOException;
 import java.util.Scanner;

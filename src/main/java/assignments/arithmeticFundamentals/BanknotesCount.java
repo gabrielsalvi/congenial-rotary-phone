@@ -12,12 +12,12 @@ seguindo o exemplo de saída abaixo. Após cada linha deve ser imprimido o fim
 de linha. */
 
 
-package basic.arithmeticFundamentals;
+package assignments.arithmeticFundamentals;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Banknotes
+public class BanknotesCount
 {
     public static void main(String[] args) throws IOException
     {
