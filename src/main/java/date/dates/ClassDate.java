@@ -1,4 +1,4 @@
-package basic.dates.date;
+package date.dates;
 
 import java.util.Date;
 
