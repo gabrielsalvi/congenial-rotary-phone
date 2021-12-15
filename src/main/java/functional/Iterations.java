@@ -1,4 +1,4 @@
-package advanced.functional;
+package functional;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

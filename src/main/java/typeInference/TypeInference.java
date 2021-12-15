@@ -1,4 +1,4 @@
-package advanced.javaTen;
+package typeInference;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

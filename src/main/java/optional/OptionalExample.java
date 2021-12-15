@@ -1,4 +1,4 @@
-package advanced.optional;
+package optional;
 
 import java.util.Optional;
 

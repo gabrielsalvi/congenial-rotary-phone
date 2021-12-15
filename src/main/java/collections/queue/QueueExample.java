@@ -3,7 +3,7 @@ package collections.queue;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class LinkedListExample
+public class QueueExample
 {
     public static void printFoodOrders(Queue<String> foodOrders)
     {

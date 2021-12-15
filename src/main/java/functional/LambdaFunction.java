@@ -1,4 +1,4 @@
-package advanced.functional;
+package functional;
 
 public class LambdaFunction
 {

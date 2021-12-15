@@ -1,4 +1,4 @@
-package advanced.threads;
+package threads;
 
 import java.util.stream.IntStream;
 

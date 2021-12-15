@@ -1,4 +1,4 @@
-package advanced.threads;
+package threads;
 
 public class ThreadExample
 {

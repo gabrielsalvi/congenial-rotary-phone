@@ -1,4 +1,4 @@
-package advanced.functional.function;
+package functional.function;
 
 import java.util.function.Function;
 
