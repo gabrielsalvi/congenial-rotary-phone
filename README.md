@@ -19,8 +19,9 @@ This repository contains programs related to my studies of Java, whose goals wer
 
 I've implemented some of the most used data structures, in order to have a better understanding of their patterns and behaviors.
 
+* Singly Linked List
 * Doubly Linked List
-* Simply Linked List
+* Circular Singly Linked List
 * Queue
 * Stack
 
