@@ -16,14 +16,11 @@ public class DoublyLinkedList<T> {
 
     public int size() {
 
-        if (isEmpty())
-            return 0;
-
         Node<T> aux = head;
 
-        int size = 1;
+        int size = 0;
 
-        while (aux != tail) {
+        while (aux != null) {
             aux = aux.getNext();
             size++;
         }
@@ -90,6 +87,7 @@ public class DoublyLinkedList<T> {
             node.setPrevious(nodeInTheIndex.getPrevious());
             node.setNext(nodeInTheIndex);
 
+            nodeInTheIndex.getPrevious().setNext(node);
             nodeInTheIndex.setPrevious(node);
 
         }

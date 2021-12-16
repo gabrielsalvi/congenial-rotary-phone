@@ -14,25 +14,19 @@ public class Main {
             list.add(person);
         }
 
-        System.out.println(list);
-
-        System.out.println("The removed element: " + list.remove(0));
-
-        System.out.println(list);
-
+        System.out.println("\nThe removed element: " + list.remove(0));
         System.out.println("The removed element: " + list.remove(2));
-
-        System.out.println(list);
-
         System.out.println("The removed element: " + list.remove(list.size() - 1));
 
         System.out.println(list);
 
-        list.add("Palmeiras", 0);
+        list.add("Palmeiras", 1);
         list.add("São Paulo", list.size());
 
         System.out.println(list);
 
         System.out.println("Size of the list: " + list.size());
+
+        System.out.println("Element of index 2: " + list.get(2));
     }
 }
