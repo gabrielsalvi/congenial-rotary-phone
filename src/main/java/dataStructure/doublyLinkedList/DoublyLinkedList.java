@@ -4,8 +4,10 @@ public class DoublyLinkedList<T> {
 
     private Node<T> head;
     private Node<T> tail;
+    private int size;
 
     public DoublyLinkedList() {
+        this.size = 0;
         this.head = null;
         this.tail = null;
     }
@@ -15,38 +17,31 @@ public class DoublyLinkedList<T> {
     }
 
     public int size() {
-
-        Node<T> aux = head;
-
-        int size = 0;
-
-        while (aux != null) {
-            aux = aux.getNext();
-            size++;
-        }
-
-        return size;
+        return this.size;
     }
 
     public void add(T element) {
 
+        Node<T> newNode = new Node<>(element);
+
         if (isEmpty()) {
 
-            this.head = new Node<>(element);
+            this.head = newNode;
             this.tail = head;
 
         } else {
 
-            Node<T> node = new Node<>(element);
+            newNode.setPrevious(tail);
+            tail.setNext(newNode);
 
-            node.setPrevious(tail);
-            tail.setNext(node);
-
-            tail = node;
+            tail = newNode;
 
         }
 
+        this.size++;
+
     }
+
 
     public void add(T element, int index) {
 
@@ -92,30 +87,28 @@ public class DoublyLinkedList<T> {
 
         }
 
+        this.size++;
+
     }
 
     public T remove(int index) {
 
         Node<T> nodeToRemove = getNode(index);
 
-        if (index == 0) {
+        if (head == tail) {
 
-            if (head == tail) {
+            this.head = null;
+            this.tail = null;
 
-                this.head = null;
-                this.tail = null;
+        } else if (nodeToRemove == head) {
 
-            } else {
+            head = head.getNext();
+            head.setPrevious(null);
 
-                head.getNext().setPrevious(null);
-                head = head.getNext();
+        } else if (nodeToRemove == tail) {
 
-            }
-
-        } else if (index == size() - 1) {
-
-            tail.getPrevious().setNext(null);
             tail = tail.getPrevious();
+            tail.setNext(null);
 
         } else {
 
@@ -123,6 +116,8 @@ public class DoublyLinkedList<T> {
             nodeToRemove.getPrevious().setNext(nodeToRemove.getNext());
 
         }
+
+        this.size--;
 
         return nodeToRemove.getElement();
     }
